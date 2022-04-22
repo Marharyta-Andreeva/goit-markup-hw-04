@@ -53,6 +53,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
+    outline: 1px solid tomato;
 }
 
 .section {
@@ -141,6 +142,11 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+    ),
+     url(../images/hero-bg.jpg);
 }
 
 .hero-title {
@@ -173,7 +179,7 @@ img {
 
 .hero-btn:hover{
     color: var(--hero-color);
-    background-color: #107ed8;
+    background-color: #188CE8;
 }
 
 .visually-hidden {
@@ -281,11 +287,29 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 16px;
 }
 
 .team-box {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item + .team-soc-item {
+    margin-left: 10px;
+}
+
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+    background-color: var(--accent-color);
 }
 
 /*------------------------------------------PORTFOLIO------------------------------------------*/
@@ -400,4 +424,39 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
     color: var(--accent-color);
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: var(--hero-color);
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+
+.footer-soc-list {
+    display: flex;
+}
+
+.footer-soc-item + .footer-soc-item {
+    margin-left: 10px;
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
 }
