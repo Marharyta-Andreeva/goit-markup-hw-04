@@ -53,7 +53,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 1px solid tomato;
 }
 
 .section {
@@ -383,6 +382,44 @@ img {
 
 .team-soc-link:focus .team-soc-icon {
     fill: #ffffff;
+}
+/*------------------------------------------CLIENTS------------------------------------------*/
+
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+    margin-left: 30px;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+
+}
+
+.clients-item:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-item:hover .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-item:focus .clients-icon {
+    fill: var(--accent-color);
 }
 
 /*------------------------------------------PORTFOLIO------------------------------------------*/
