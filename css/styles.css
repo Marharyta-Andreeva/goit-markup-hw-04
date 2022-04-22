@@ -135,6 +135,36 @@ img {
     color: var(--accent-color);
 }
 
+.header-mail-icon {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+
+.header-tel-icon {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+
+.header-link:hover .header-mail-icon {
+    fill: var(--accent-color)
+}
+
+.header-link:focus .header-mail-icon {
+    fill: var(--accent-color)
+}
+
+.header-link:hover .header-tel-icon {
+    fill: var(--accent-color)
+}
+
+.header-link:focus .header-tel-icon {
+    fill: var(--accent-color)
+}
+
 /*------------------------------------------HERO------------------------------------------*/
 
 .hero {
@@ -196,6 +226,30 @@ img {
 }
 
 /*------------------------------------------ABOUT------------------------------------------*/
+
+.about-icons-list {
+    display: flex;
+}
+
+.about-icons-item {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.about-icons-item::before {
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+
+.about-icons-item + .about-icons-item {
+    margin-left: 30px;
+}
 
 .about-list {
     display: flex;
@@ -308,8 +362,27 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: block;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-icon {
+    fill: #AFB1B8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-color);
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: #ffffff;
+}
+
+.team-soc-link:focus .team-soc-icon {
+    fill: #ffffff;
 }
 
 /*------------------------------------------PORTFOLIO------------------------------------------*/
@@ -338,6 +411,14 @@ img {
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+    display: block;
+}
+
+.portfolio-second-item:hover,
+.portfolio-second-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-btn {
@@ -360,6 +441,9 @@ img {
 .portfolio-btn.current {
     color: #ffffff;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-box {
@@ -457,6 +541,19 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: block;
     background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-soc-icon {
+    fill: #ffffff;
+    justify-content: center;
+    align-items: center;
 }
