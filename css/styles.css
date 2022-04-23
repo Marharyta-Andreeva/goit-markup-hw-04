@@ -124,16 +124,6 @@ img {
     padding-bottom: 32px;
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus,
-.current{
-    color: var(--accent-color);
-}
-
 .header-mail-icon {
     padding: 0;
     margin-left: 0;
@@ -146,6 +136,16 @@ img {
     margin-left: 0;
     margin-right: 10px;
     fill: var(--primary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
+.current {
+    color: var(--accent-color);
 }
 
 .header-link:hover .header-mail-icon {
@@ -387,38 +387,38 @@ img {
 
 .clients-list {
     display: flex;
+    justify-content: center;
 }
 
-.clients-item {
+.clients-item+.clients-item {
+    margin-left: 30px;
+}
+
+.clients-link {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-}
-
-.clients-item + .clients-item {
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clients-icon {
     fill: #AFB1B8;
-
 }
 
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-item:hover .clients-icon {
+.clients-link:hover .clients-icon {
     fill: var(--accent-color);
 }
 
-.clients-item:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.clients-item:focus .clients-icon {
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
