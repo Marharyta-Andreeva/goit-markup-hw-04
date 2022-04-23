@@ -68,6 +68,7 @@ img {
 
 .header .container {
     display: flex;
+    justify-items: center;
     align-items: center;
 }
 
@@ -119,7 +120,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -148,19 +149,19 @@ img {
     color: var(--accent-color);
 }
 
-.header-link:hover .header-mail-icon {
+.header-mail:hover .header-mail-icon {
     fill: var(--accent-color)
 }
 
-.header-link:focus .header-mail-icon {
+.header-mail:focus .header-mail-icon {
     fill: var(--accent-color)
 }
 
-.header-link:hover .header-tel-icon {
+.header-tel:hover .header-tel-icon {
     fill: var(--accent-color)
 }
 
-.header-link:focus .header-tel-icon {
+.header-tel:focus .header-tel-icon {
     fill: var(--accent-color)
 }
 
