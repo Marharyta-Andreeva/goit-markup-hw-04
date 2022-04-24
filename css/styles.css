@@ -133,6 +133,8 @@ img {
 }
 
 .header-tel-icon {
+    width: 10px;
+    height: 16px;
     padding: 0;
     margin-left: 0;
     margin-right: 10px;
