@@ -121,6 +121,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -265,6 +266,7 @@ img {
 .about-top-text {
     margin-bottom: 10px;
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;    
@@ -549,6 +551,7 @@ img {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-contacts {
@@ -563,7 +566,6 @@ img {
     text-transform: uppercase;    
     color: var(--hero-color);
     margin-bottom: 20px;
-    padding-top: 12px;
 }
 
 .footer-soc-list {
